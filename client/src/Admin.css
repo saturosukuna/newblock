@@ -1,0 +1,316 @@
+/* Base Styles */
+.form-container {
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .form-title {
+    color: #2c7a47;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  /* Responsive Grid System */
+  .form-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+  
+  /* Input Fields */
+  .input-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .input-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #fff;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+  }
+  
+  /* Specialized Input Focus States */
+  .input-email:focus { border-color: #4299e1; }
+  .input-tel:focus { border-color: #48bb78; }
+  .input-date:focus { border-color: #f6ad55; }
+  .input-number:focus { border-color: #f56565; }
+  
+  .input-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #4299e1;
+    margin-top: 0.25rem;
+  }
+  
+  /* Document Upload Section */
+  .document-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  }
+  
+  .file-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px dashed #cbd5e0;
+    border-radius: 0.375rem;
+    background: #f7fafc;
+    transition: border-color 0.2s ease;
+  }
+  
+  .file-input:hover {
+    border-color: #4299e1;
+    background: #ebf8ff;
+  }
+  
+  /* Buttons with Responsive Sizing */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .btn-primary {
+    background-color: #4299e1;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3182ce;
+  }
+  
+  /* Search Section */
+  .search-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+  }
+  
+  /* Student Info Display */
+  .student-info {
+    margin-top: 2rem;
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .info-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  }
+  
+  .document-display-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  }
+  
+  .document-iframe {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background: #fff;
+  }
+  /* App.css */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #2c3e50;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3498db;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.connect-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+  background-color: #2980b9;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ecf0f1;
+}
+
+.account-address {
+  background-color: rgba(255,255,255,0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+.account-role {
+  color: #2ecc71;
+  font-weight: 500;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-left {
+    gap: 1rem;
+  }
+  
+  .account-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+  
+  /* Responsive Breakpoints */
+  @media (min-width: 640px) {
+    .form-container {
+      padding: 2rem;
+    }
+    
+    .form-title {
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+  
+    .search-group {
+      flex-direction: row;
+    }
+  
+    .btn {
+      width: auto;
+      padding: 0.75rem 2rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .document-iframe {
+      height: 500px;
+    }
+  
+    .form-input {
+      padding: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .form-grid {
+      gap: 1.5rem;
+    }
+  
+    .document-display-grid {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  }
+  
+  /* Mobile Optimization */
+  @media (max-width: 639px) {
+    .info-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .document-iframe {
+      height: 300px;
+    }
+  
+    .btn {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
